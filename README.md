@@ -49,8 +49,6 @@ This repository contains:
 
 ---
 
----
-
 # Author
 
 ## Shafin Ahmed
