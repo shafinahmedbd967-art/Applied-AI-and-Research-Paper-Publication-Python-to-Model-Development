@@ -1,6 +1,4 @@
-# 02_variable_comparison_student_age.py
-
-# ─── Student Data ────────────────────────────────────────────────────────
+# Student Data
 student_1_name = "Ayman"
 student_1_age = 23
 
@@ -14,7 +12,7 @@ MINIMUM_AGE = 18
 MAXIMUM_AGE = 30
 
 
-# ─── Basic Comparison ────────────────────────────────────────────────────
+# Basic Comparison
 print(student_1_age == student_2_age)       # False
 print(student_1_age == student_3_age)       # True
 print(student_1_age != student_2_age)       # True
@@ -24,7 +22,7 @@ print(student_1_age >= student_3_age)       # True
 print(student_1_age <= student_2_age)       # True
 
 
-# ─── Eligibility Check ───────────────────────────────────────────────────
+# Eligibility Check
 is_ayman_eligible = MINIMUM_AGE <= student_1_age <= MAXIMUM_AGE
 is_rafi_eligible  = MINIMUM_AGE <= student_2_age <= MAXIMUM_AGE
 
@@ -32,7 +30,7 @@ print(is_ayman_eligible)                    # True
 print(is_rafi_eligible)                     # True
 
 
-# ─── Who is Older ────────────────────────────────────────────────────────
+# Who is Older 
 is_ayman_older = student_1_age > student_2_age
 is_rafi_older  = student_2_age > student_1_age
 is_same_age    = student_1_age == student_2_age
@@ -42,27 +40,27 @@ print(is_rafi_older)                        # True
 print(is_same_age)                          # False
 
 
-# ─── Comparing with String ───────────────────────────────────────────────
+# Comparing with String
 print(student_1_name == student_2_name)     # False
 print(student_1_name == "Ayman")            # True
 print(student_1_name != student_2_name)     # True
 
 
-# ─── Age Difference ──────────────────────────────────────────────────────
+# Age Difference
 age_difference = student_2_age - student_1_age
 print(age_difference)                       # 2
 print(age_difference > 0)                   # True  (Rafi is older)
 print(age_difference == 0)                  # False (not same age)
 
 
-# ─── Chained Comparison ──────────────────────────────────────────────────
+# Chained Comparison
 # Python allows chaining comparisons — very clean and readable
 print(student_1_age < student_2_age < 30)   # True
 print(18 < student_1_age < 25)              # True
 print(18 < student_2_age < 24)              # False  (25 is not < 24)
 
 
-# ─── Comparing Result Stored in Variable ────────────────────────────────
+# Comparing Result Stored in Variable
 ayman_is_adult   = student_1_age >= 18
 rafi_is_adult    = student_2_age >= 18
 both_are_adults  = ayman_is_adult == rafi_is_adult
@@ -72,7 +70,7 @@ print(rafi_is_adult)                        # True
 print(both_are_adults)                      # True
 
 
-# ─── is vs == ────────────────────────────────────────────────────────────
+# is vs ==
 # == checks VALUE equality
 # is checks IDENTITY (same memory address / same object)
 

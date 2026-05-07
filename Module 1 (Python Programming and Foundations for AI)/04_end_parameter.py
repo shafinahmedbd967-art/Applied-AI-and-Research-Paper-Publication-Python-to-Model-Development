@@ -1,5 +1,4 @@
-# 04_end_parameter.py
-
+# end parameter in print() function
 print("Ayman", end=" ")
 print("Rafi", end=" ")
 print("Nila")                   # Ayman Rafi Nila
@@ -9,3 +8,7 @@ print(23)                       # Age:: 23
 
 print("Loading", end="...")
 print("Done")                   # Loading...Done
+
+
+
+

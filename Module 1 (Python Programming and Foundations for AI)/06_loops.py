@@ -1,7 +1,4 @@
-# ════════════════════════════════════════════════════════════════
-# SECTION 1: range() — The Core Tool for Looping
-# ════════════════════════════════════════════════════════════════
-
+#  SECTION 1: range() — The Core Tool for Looping
 # range(stop)          → 0 to stop-1
 # range(start, stop)   → start to stop-1
 # range(start, stop, step) → start to stop-1 with step
@@ -12,10 +9,7 @@ print(list(range(0, 10, 2)))        # [0, 2, 4, 6, 8]
 print(list(range(10, 0, -1)))       # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 2: for Loop with range()
-# ════════════════════════════════════════════════════════════════
-
+#  SECTION 2: for Loop with range()
 # Basic for loop — runs exactly 5 times
 for i in range(5):
     print(i, end=" ")               # 0 1 2 3 4
@@ -64,10 +58,7 @@ for char in name:
 print()
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 4: enumerate() — Index + Value Together
-# ════════════════════════════════════════════════════════════════
-
+#  SECTION 4: enumerate() — Index + Value Together
 # enumerate() gives both the index and the value at the same time
 # Without enumerate — manually tracking index (bad practice)
 students = ["Ayman", "Rafi", "Nila", "Sara"]
@@ -114,10 +105,7 @@ for index, (student, score) in enumerate(zip(students, scores), start=1):
 # Rank 4 | Sara: 95
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 5: while Loop
-# ════════════════════════════════════════════════════════════════
-
+#  SECTION 5: while Loop
 # while loop runs as long as the condition is True
 # Use when you don't know how many iterations are needed
 
@@ -143,9 +131,7 @@ while epoch <= max_epochs:
 # Epoch 5 | Loss: 0.1681
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 6: break and continue
-# ════════════════════════════════════════════════════════════════
+#  SECTION 6: break and continue
 
 # break — exits the loop immediately
 print("Break example:")
@@ -182,10 +168,9 @@ for score in scores:
 # Perfect score 100 found — stopping
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 7: while with break — Input Validation Loop
-# ════════════════════════════════════════════════════════════════
 
+
+#  SECTION 7: while with break — Input Validation Loop
 # Keep asking for input until valid data is provided
 # This is a very common real-world pattern
 
@@ -203,10 +188,7 @@ def get_valid_age():
 # Enter student age (18-30): 25  → Valid age: 25
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 8: Nested Loops
-# ════════════════════════════════════════════════════════════════
-
+#  SECTION 8: Nested Loops
 # A loop inside another loop
 # Outer loop runs N times, inner loop runs M times → N×M total iterations
 
@@ -224,9 +206,9 @@ for student in students:
 # Rafi  → Python
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 9: List Comprehension — Pythonic Loop
-# ════════════════════════════════════════════════════════════════
+
+#  SECTION 9: List Comprehension — Pythonic Loop
+
 
 # One-line loop that builds a list — extremely common in ML/data processing
 # Syntax: [expression for item in iterable if condition]

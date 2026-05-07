@@ -1,4 +1,4 @@
-# ─── Basic if / else ─────────────────────────────────────────────────────
+# Basic if / else 
 age = 20
 
 if age >= 18:
@@ -7,7 +7,7 @@ else:
     print("Minor")
 
 
-# ─── if / elif / else ────────────────────────────────────────────────────
+# if / elif / else
 score = 72
 
 if score >= 90:

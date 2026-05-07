@@ -1,7 +1,4 @@
-# ════════════════════════════════════════════════════════════════
-# SECTION 1: Basic Function — No Parameter, No Return
-# ════════════════════════════════════════════════════════════════
-
+ # SECTION 1: Basic Function — No Parameter, No Return
 # A simple function that just prints a message
 # No input, no output — just executes a block of code
 def greet():
@@ -9,15 +6,11 @@ def greet():
 
 greet()                                     # Welcome to Applied AI Course!
 greet()                                     # Welcome to Applied AI Course!
-# Same function called twice — no code repetition
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 2: Function with Parameters
-# ════════════════════════════════════════════════════════════════
 
-# Parameters are variables that receive values when the function is called
-# 'name' and 'age' are parameters here
+
+ # SECTION 2: Function with Parameters
 def greet_student(name, age):
     print(f"Hello {name}, you are {age} years old.")
 
@@ -25,9 +18,7 @@ greet_student("Ayman", 23)                  # Hello Ayman, you are 23 years old.
 greet_student("Rafi", 25)                   # Hello Rafi, you are 25 years old.
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 3: Function with Return Value
-# ════════════════════════════════════════════════════════════════
+ # SECTION 3: Function with Return Value
 
 # 'return' sends a value back to the caller
 # Without return, function returns None by default
@@ -42,10 +33,7 @@ print(result)                               # 2
 print(calculate_age_difference(30, 18) > 5) # True
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 4: Default Arguments
-# ════════════════════════════════════════════════════════════════
-
+ # SECTION 4: Default Arguments
 # Default arguments are used when no value is passed for that parameter
 # Must always be defined AFTER non-default parameters
 def enroll_student(name, course="Applied AI", fee=300):
@@ -61,10 +49,7 @@ enroll_student("Nila", "NLP", 8000)
 # Nila enrolled in NLP — Fee: 8000 BDT
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 5: Keyword Arguments
-# ════════════════════════════════════════════════════════════════
-
+ # SECTION 5: Keyword Arguments
 # Keyword arguments let you pass values by parameter name
 # Order does not matter when using keyword arguments
 def student_profile(name, age, gpa):
@@ -98,9 +83,7 @@ print(low)                                  # 60
 print(avg)                                  # 82.0
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 7: *args — Multiple Positional Arguments
-# ════════════════════════════════════════════════════════════════
+#  SECTION 7: *args — Multiple Positional Arguments
 
 # *args collects any number of positional arguments into a tuple
 # Useful when you don't know how many arguments will be passed
@@ -115,12 +98,8 @@ print(total_marks(70, 85, 90, 95))          # Received scores: (70, 85, 90, 95)
                                             # 340
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 8: **kwargs — Multiple Keyword Arguments
-# ════════════════════════════════════════════════════════════════
-
-# **kwargs collects any number of keyword arguments into a dictionary
-# Very common in ML libraries like PyTorch, Keras for model configs
+#  SECTION 8: **kwargs — Multiple Keyword Arguments
+#  **kwargs collects any number of keyword arguments into a dictionary
 def build_model_config(**kwargs):
     print("Model Configuration:")
     for key, value in kwargs.items():
@@ -137,14 +116,10 @@ build_model_config(
 #   layers: 5
 #   dropout: 0.3
 #   optimizer: Adam
-
-
-# ════════════════════════════════════════════════════════════════
-# SECTION 9: *args + **kwargs Together
-# ════════════════════════════════════════════════════════════════
-
-# Combining both — maximum flexibility
-# Order must be: normal params → *args → **kwargs
+ 
+ # SECTION 9: *args + **kwargs Together
+#  Combining both — maximum flexibility
+#  Order must be: normal params → *args → **kwargs
 def train_model(model_name, *scores, **config):
     print(f"Training: {model_name}")
     print(f"Scores: {scores}")
@@ -161,10 +136,7 @@ train_model(
 # Config: {'epochs': 10, 'lr': 0.001}
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 10: Separator in print()
-# ════════════════════════════════════════════════════════════════
-
+#  SECTION 10: Separator in print()
 # sep parameter defines what goes between multiple print values
 # Default sep is a single space " "
 def display_student(name, age, gpa):
@@ -179,10 +151,7 @@ print("Name", "Age", "GPA", sep="-", end="\n---\n")
 # ---
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 11: Input from User + Type Casting
-# ════════════════════════════════════════════════════════════════
-
+#  SECTION 11: Input from User + Type Casting
 # input() always returns a STRING — must cast to correct type
 # int() converts string to integer
 # float() converts string to float
@@ -192,15 +161,13 @@ print("Name", "Age", "GPA", sep="-", end="\n---\n")
 def get_student_input():
     name = input("Enter student name: ")        # str by default
     age  = int(input("Enter age: "))            # cast to int
-    gpa  = float(input("Enter GPA: "))          # cast to float
-
+    gpa  = float(input("Enter GPA: "))          # cast to float 
     print(f"\n--- Student Profile ---")
     print(f"Name : {name}")
     print(f"Age  : {age}")
     print(f"GPA  : {gpa}")
     print(f"Types: {type(name)}, {type(age)}, {type(gpa)}")
-
-    # Eligibility check using the collected data
+    #  Eligibility check using the collected data
     if age >= 18 and gpa >= 2.5:
         print("Status: Eligible for enrollment")
     else:
@@ -219,10 +186,8 @@ get_student_input()
 # Types: <class 'str'>, <class 'int'>, <class 'float'>
 # Status: Eligible for enrollment
 
+ # SECTION 12: Type Casting — Deep Dive
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 12: Type Casting — Deep Dive
-# ════════════════════════════════════════════════════════════════
 
 # Explicit type conversion between compatible types
 def type_casting_demo():

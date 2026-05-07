@@ -1,6 +1,4 @@
-# 01_variables.py
-
-# ─── Basic Variable Assignment ───────────────────────────────────────────
+#Basic Variable Assignment────
 name = "Ayman"          # str type
 age = 23                # int type
 gpa = 3.85              # float type
@@ -12,15 +10,14 @@ print(gpa)              # 3.85
 print(is_enrolled)      # True
 
 
-# ─── type() to Check Data Types ────────────────────────────────────
+#type() to Check Data Types
 print(type(name))       # <class 'str'>
 print(type(age))        # <class 'int'>
 print(type(gpa))        # <class 'float'>
-print(type(is_enrolled))# <class 'bool'>
+print(type(is_enrolled)) # <class 'bool'>
 
 
-# ─── Dynamic Typing ──────────────────────────────────────────────────────
-# Python এ একই variable এ different type এর value রাখা যায়
+# Dynamic Typing
 x = 10
 print(type(x))          # <class 'int'>
 
@@ -31,7 +28,7 @@ x = 3.14
 print(type(x))          # <class 'float'>
 
 
-# ─── Multiple Assignment ─────────────────────────────────────────────────
+# Multiple Assignment
 # Assign multiple variables at once
 a, b, c = 1, 2, 3
 print(a, b, c)          # 1 2 3
@@ -41,7 +38,7 @@ p = q = r = 0
 print(p, q, r)          # 0 0 0
 
 
-# ─── id() to Check Memory Address ──────────────────────────────────────
+# id() to Check Memory Address 
 # Variable actually references an object in memory. Small integers are cached by Python, so they may have the same id.
 m = 10
 n = 10
