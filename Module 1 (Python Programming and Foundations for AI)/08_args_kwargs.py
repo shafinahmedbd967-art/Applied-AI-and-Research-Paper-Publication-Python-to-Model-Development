@@ -83,8 +83,7 @@ print(scores)
 # Output: [90, 78, 55, 45, 23]
 
 
-# ----- *args section -----
-
+# *args section - for multiple positional arguments
 # this function doesnt know how many numbers it will receive
 def add_all(*args):
     total = 0
@@ -129,7 +128,7 @@ print(result)
 # Output: 24
 
 
-# ----- **kwargs section -----
+# **kwargs section
 
 # kwargs collects named arguments into a dictionary
 def show_info(**kwargs):

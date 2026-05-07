@@ -1,6 +1,4 @@
-# ════════════════════════════════════════════════════════════════
-# SECTION 1: LIST
-# ════════════════════════════════════════════════════════════════
+#  SECTION 1: LIST
 # List is ordered, mutable (changeable), allows duplicate values
 # Defined with square brackets []
 
@@ -58,10 +56,7 @@ print("Ayman" in students)          # True
 print(students.index("Nila"))       # 2
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 2: TUPLE
-# ════════════════════════════════════════════════════════════════
-
+#  SECTION 2: TUPLE
 # Tuple is ordered, IMMUTABLE (cannot be changed), allows duplicates
 # Defined with parentheses ()
 # Use tuple when data should NOT change — coordinates, RGB, config values
@@ -94,10 +89,7 @@ low, high = get_min_max([70, 85, 92, 60])
 print(low, high)                    # 60 92
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 3: LIST vs TUPLE — Difference and When to Use
-# ════════════════════════════════════════════════════════════════
-
+#   SECTION 3: LIST vs TUPLE — Difference and When to Use
 # LIST  → mutable, use when data changes (adding students, updating scores)
 # TUPLE → immutable, use when data is fixed (coordinates, RGB, DB records)
 
@@ -124,11 +116,9 @@ location_data = {
 }
 print(location_data[(23.8103, 90.4125)])    # Dhaka
 
+ 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 4: DICTIONARY
-# ════════════════════════════════════════════════════════════════
-
+#  SECTION 4: DICTIONARY
 # Dictionary is key-value pairs, ordered (Python 3.7+), mutable
 # Keys must be unique and immutable (str, int, tuple)
 # Defined with curly braces {}
@@ -171,7 +161,7 @@ for key, value in student.items():
 print(list(student.keys()))        # ['name', 'age', 'gpa']
 print(list(student.values()))      # ['Ayman', 23, 3.90]
 
-# ── Nested Dictionary ────────────────────────────────────────────
+# Nested Dictionary
 # Dictionary inside a dictionary — very common for structured data
 # In ML: model configs, dataset metadata, API responses (JSON)
 
@@ -216,11 +206,9 @@ for course, details in course_data.items():
 #   Instructor: Dr. Khan
 #   Nila  — GPA: 3.90
 
+ 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 5: SET
-# ════════════════════════════════════════════════════════════════
-
+#  SECTION 5: SET
 # Set is unordered, mutable, NO duplicates allowed
 # Defined with curly braces {} — but no key-value pairs
 # Use when you need unique values or set operations
@@ -294,12 +282,12 @@ indexed  = [f"{i+1}. {name}" for i, name in enumerate(students)]
 print(indexed)                      # ['1. Ayman', '2. Rafi', '3. Nila']
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 7: LIST COMPREHENSION IN DICTIONARY
-# (Building a list of dictionaries)
-# ════════════════════════════════════════════════════════════════
 
-# Very common in ML — building structured dataset records
+
+#  SECTION 7: LIST COMPREHENSION IN DICTIONARY
+#  (Building a list of dictionaries)
+
+# building structured dataset records
 names  = ["Ayman", "Rafi", "Nila"]
 scores = [85, 92, 78]
 
@@ -316,10 +304,7 @@ for record in student_records:
 # {'name': 'Nila',  'score': 78, 'grade': 'Pass'}
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 8: DICTIONARY COMPREHENSION
-# ════════════════════════════════════════════════════════════════
-
+#  SECTION 8: DICTIONARY COMPREHENSION
 # Syntax: {key: value for item in iterable if condition}
 # Builds a dictionary in one line
 
@@ -348,10 +333,7 @@ print(inverted)
 # {85: 'Ayman', 92: 'Rafi', 78: 'Nila', 60: 'Sara'}
 
 
-# ════════════════════════════════════════════════════════════════
-# SECTION 9: CLASS-BASED INDEX ENUMERATION
-# ════════════════════════════════════════════════════════════════
-
+#  SECTION 9: CLASS-BASED INDEX ENUMERATION
 # Using a class to represent indexed student data
 # This is where OOP meets data structures
 

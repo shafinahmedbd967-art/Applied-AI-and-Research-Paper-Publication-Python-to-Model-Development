@@ -207,9 +207,7 @@ for student in students:
 
 
 
-#  SECTION 9: List Comprehension — Pythonic Loop
-
-
+#   SECTION 9: List Comprehension — Pythonic Loop
 # One-line loop that builds a list — extremely common in ML/data processing
 # Syntax: [expression for item in iterable if condition]
 
