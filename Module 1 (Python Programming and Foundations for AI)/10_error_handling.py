@@ -19,7 +19,7 @@ except ZeroDivisionError as e:
 # Output: Error caught: division by zero
 
 
-# ----- multiple except blocks -----
+# multiple except blocks
 
 def safe_divide(a, b):
     try:
@@ -60,7 +60,7 @@ print(parse_input(None))
 # Output: None
 
 
-# ----- finally block -----
+# finally block
 
 # finally always runs no matter what
 def read_data(filename):
