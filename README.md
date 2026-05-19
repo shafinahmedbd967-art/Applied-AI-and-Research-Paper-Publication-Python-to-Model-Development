@@ -46,6 +46,10 @@ This repository contains:
 # Technologies Used
 
 - Python
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
 
 ---
 
