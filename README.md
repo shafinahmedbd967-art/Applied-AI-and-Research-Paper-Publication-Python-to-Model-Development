@@ -24,8 +24,8 @@ This repository contains:
 |------|------|------|
 | 13-03-2026 | 9:30pm - 10:30pm | Python Programming Foundations for AI |
 | 14-03-2026 | 9:30pm - 10:30pm | Data Analysis & Visualization |
-| 08-05-2026 | 8pm - 10pm | Machine Learning Fundamentals |
-| 09-05-2026 | 8pm - 10pm | Deep Learning & Computer Vision |
+| 15-05-2026 | 8pm - 10pm | Machine Learning Fundamentals |
+| 22-05-2026 | 8pm - 10pm | Deep Learning & Computer Vision |
 | 15-05-2026 | 8pm - 10pm | API Development & Model Deployment |
 | 16-05-2026 | 8pm - 10pm | Research Paper Writing |
 | 22-05-2026 | 8pm - 10pm | Paper Publication & Research Ethics |
@@ -46,6 +46,10 @@ This repository contains:
 # Technologies Used
 
 - Python
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
 
 ---
 
