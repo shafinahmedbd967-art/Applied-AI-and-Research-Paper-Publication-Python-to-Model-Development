@@ -27,8 +27,8 @@ This repository contains:
 | 15-05-2026 | 8pm - 10pm | Machine Learning Fundamentals |
 | 22-05-2026 | 8pm - 10pm | Deep Learning & Computer Vision |
 | 15-05-2026 | 8pm - 10pm | API Development & Model Deployment |
-| 16-05-2026 | 8pm - 10pm | Research Paper Writing |
-| 22-05-2026 | 8pm - 10pm | Paper Publication & Research Ethics |
+| 23-05-2026 | 8pm - 10pm | Research Paper Writing |
+| 23-05-2026 | 8pm - 10pm | Paper Publication & Research Ethics |
 | 23-05-2026 | 8pm - 10pm | Team Formation |
 
 ---
