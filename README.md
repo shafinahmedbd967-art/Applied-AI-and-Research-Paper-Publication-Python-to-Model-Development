@@ -290,7 +290,7 @@ https://github.com/shafinahmedbd967-art
 
 # 📜 License
 
-This repository is intended for educational and learning purposes only.
+This repository is intended for educational and learning purposes only...
 
 ---
 
